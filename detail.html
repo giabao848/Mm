@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Click để xem ảnh 👀</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: white;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: clamp(28px, 5vw, 50px);
+            margin-bottom: 30px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        /* Điện thoại */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-<body style="text-align:center; margin-top:100px;">
-    <h1>Ảnh của bạn đây 👀</h1>
-    <img src="/workspaces/Mm/494e5c82-2a59-40bd-974e-585c46af11ab.jpg" width="500">
+
+<body>
+
+    <div class="container">
+
+        <img
+            src="./494e5c82-2a59-40bd-974e-585c46af11ab.jpg"
+            alt="Ảnh"
+        >
+
+    </div>
+
 </body>
 </html>
